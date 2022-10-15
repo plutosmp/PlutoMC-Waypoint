@@ -1,6 +1,3 @@
-# PlutoMC Plugin Template
-**PlutoMC server plugin template repository which was set up by DeeChael**
+# PlutoMC-Waypoint
 
-**JDK 17 is required!**
-
-Please create new plugin with this template repository!
+PlutoMC 玩家坐标分享系统。
