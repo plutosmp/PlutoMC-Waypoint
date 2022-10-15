@@ -296,6 +296,10 @@ public final class WaypointPlugin extends JavaPlugin {
             return WaypointPlugin.getInstance().getConfig().getDouble(path);
         }
 
+        public static List<String> list(String path) {
+            return WaypointPlugin.getInstance().getConfig().getStringList(path);
+        }
+
     }
 
 }
