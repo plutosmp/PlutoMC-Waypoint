@@ -19,6 +19,9 @@ repositories {
     maven {
         url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
     }
+    maven {
+        url "https://repo.codemc.org/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -28,12 +31,18 @@ dependencies {
 
     implementation 'cc.carm.lib:easysql-hikaricp:0.4.6'
     implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'de.tr7zw:item-nbt-api-plugin:2.10.0'
 
     annotationProcessor 'org.spigotmc:plugin-annotations:1.2.3-SNAPSHOT'
 }
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+shadowJar {
+    relocate "de.tr7zw.nbtapi", "top.plutomc.waypoint.lib.nbtapi"
+    relocate "de.tr7zw.nbtinjector", "top.plutomc.waypoint.lib.nbtinjector"
 }
 
 tasks.withType(JavaCompile) {

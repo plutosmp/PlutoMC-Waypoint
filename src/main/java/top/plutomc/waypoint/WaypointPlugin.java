@@ -9,6 +9,7 @@ import dev.jorel.commandapi.arguments.ChatArgument;
 import dev.jorel.commandapi.arguments.IntegerArgument;
 import dev.jorel.commandapi.arguments.LongArgument;
 import dev.jorel.commandapi.arguments.StringArgument;
+import me.nostal853.framework.menu.MenuFramework;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -68,6 +69,8 @@ public final class WaypointPlugin extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
+
+        new MenuFramework(this); // 注册菜单框架。
 
         // Register permission
         Bukkit.getPluginManager().addPermission(new Permission("plutomc.waypoint.admin", PermissionDefault.OP));
