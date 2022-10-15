@@ -1,4 +1,4 @@
-package top.plutomc.plugin.waypoint.utils;
+package top.plutomc.waypoint.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

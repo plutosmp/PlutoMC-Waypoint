@@ -1,16 +1,15 @@
-package top.plutomc.plugin.waypoint.utils;
+package top.plutomc.waypoint.utils;
 
 import cc.carm.lib.easysql.api.SQLManager;
 import cc.carm.lib.easysql.api.SQLQuery;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.bukkit.Material;
-import top.plutomc.plugin.waypoint.WaypointPlugin;
+import top.plutomc.waypoint.WaypointPlugin;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class WaypointHelper {
 

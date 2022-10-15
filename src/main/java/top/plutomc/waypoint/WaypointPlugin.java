@@ -1,4 +1,4 @@
-package top.plutomc.plugin.waypoint;
+package top.plutomc.waypoint;
 
 import cc.carm.lib.easysql.EasySQL;
 import cc.carm.lib.easysql.api.SQLManager;
@@ -22,9 +22,9 @@ import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import org.bukkit.plugin.java.annotation.plugin.Website;
 import org.bukkit.plugin.java.annotation.plugin.author.Author;
 import org.bukkit.plugin.java.annotation.plugin.author.Authors;
-import top.plutomc.plugin.waypoint.utils.GUIBuilder;
-import top.plutomc.plugin.waypoint.utils.Waypoint;
-import top.plutomc.plugin.waypoint.utils.WaypointHelper;
+import top.plutomc.waypoint.utils.GUIBuilder;
+import top.plutomc.waypoint.utils.Waypoint;
+import top.plutomc.waypoint.utils.WaypointHelper;
 
 import java.sql.Connection;
 import java.sql.SQLException;

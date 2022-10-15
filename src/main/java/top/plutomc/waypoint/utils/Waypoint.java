@@ -1,4 +1,4 @@
-package top.plutomc.plugin.waypoint.utils;
+package top.plutomc.waypoint.utils;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
